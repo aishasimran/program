@@ -1,0 +1,53 @@
+
+public class StaticMethod 
+{ 
+  static int a = 10;
+  static int b = 20; 
+
+ void display1()	
+ { 
+    System.out.println("This is an instance method1"); 
+ } 
+void display2()
+ { 
+    System.out.println("This is an instance method2"); 
+ } 
+ public void name (String Name)
+    {
+       String Name = name;
+    }
+ 
+    public void setAge(int StatSal)
+    {
+        int Age = StatSal;
+    }
+public void printStat()
+    {
+        System.out.println("name = " + name ); 
+        System.out.println("age =" + age); 
+    }
+
+static void showonce()
+{ 
+   System.out.println("This is a static method1"); 
+ } 
+static void showtwice()
+{ 
+   System.out.println("This is a static method2"); 
+ } 
+public static void main(String[] args) 
+{ 
+  
+   StaticMethod sm = new StaticMethod(); 
+    sm.display1(); 
+    sm.display2(); 
+   StaticMethod s = null; 
+    s.showonce(); 
+    s.showtwice(); 
+     int c = s.a; 
+     int c1 = s.b;
+   System.out.println(c); 
+System.out.println(c1); 
+   
+  } 
+}
